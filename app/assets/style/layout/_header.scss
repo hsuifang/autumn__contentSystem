@@ -1,0 +1,11 @@
+.header{
+  padding: 32px 0;
+  &__title {
+    margin-right: 46px;
+    font-size: $fsz * 1.5;
+    line-height: 1.5;
+  }
+  i.fas, .material-icons {
+    font-size: $fsz * 1.5;;
+  }
+}

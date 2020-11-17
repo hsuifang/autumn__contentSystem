@@ -1,0 +1,179 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<header class="header d-flex justify-content-between align-items-center">
+  <div class="d-flex align-items-center">
+    <h2 class="header__title">Assignment</h2>
+    <p class="d-flex">
+      <i class="fas fa-plus text-primary pr-2"></i>Add New Admin</p>
+    <!-- <p class="d-flex">All Course<i class="fas fa-angle-down text-primary pl-2"></i></p> -->
+  </div>
+  <div class="header__action">
+    <span class="material-icons mr-4">search</span>
+    <span class="material-icons">notifications_active</span>
+  </div>
+</header>
+<table class="table table-hover mb-6">
+  <thead>
+    <tr>
+      <th scope="col">ID <i class="fas fa-arrow-down text-primary"></i></th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Varified</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Emir Wicks</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Zaina Goldsmith</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mahima Lopez</td>
+      <td>Mahima.Lopez@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Pharrell Murray</td>
+      <td>Pharrell.Murray@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Annika Mcbride</td>
+      <td>Annika.Mcbride@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Fatimah Clark</td>
+      <td>Fatimah.Clark@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Klaudia Rhodes</td>
+      <td>Klaudia Rhodes</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Tillie Lucero</td>
+      <td>Tillie.Lucero@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Sabrina Stephenson</td>
+      <td>Sabrina.Stephenson@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Annie Smith</td>
+      <td>Annie.Smith@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons mr-4" data-toggle="modal" data-target="#openProfileModal">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#openEditModal">edit</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<nav aria-label="page navigation">
+  <ul class="pagination justify-content-end"">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true"><</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- Modal / 檢視Profile -->
+<div class="modal fade" id="openProfileModal" tabindex="-1" aria-labelledby="profileModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="profile">
+          <img class="profile__img" src="https://images.unsplash.com/photo-1522069394066-326005dc26b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+          <div class="profile__content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div>
+              <p class="mb-2">#1</p>
+              <p>Admin</p>
+              <h3 class="mb-2">Emir Wicks</h3>
+              <p class="small mb-4">emir.wicks@mail.com</p>
+              <div class="d-flex justify-content-between">
+                <p class="bg-secondary">Verified</p>
+                <i class="fas fa-angle-down text-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>

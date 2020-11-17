@@ -1,0 +1,48 @@
+.sidebar {
+  background: #EDF4EE;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0;
+}
+.logo {
+  height: 104px;
+  background-repeat: no-repeat;
+  background-position: 30px center;
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg');
+}
+.avatar {
+  padding: 32px;
+  &__img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 14px;
+  }
+}
+
+.nav-item {
+  margin-bottom: 20px;
+  &:hover{
+    background-color: rgba($primary, 0.2);
+  }
+  &:active {
+    background-color: rgba($primary, 0.3);
+  }
+  .nav-icon {
+    margin-right: 20px;
+  }
+  .nav-link {
+    display: flex;
+    padding: 6px 0 6px 30px;
+    font-size: $fsz;
+    line-height: 1.5;
+    border-left: 4px solid transparent;
+  }
+  .nav-link.active {
+    border-left: 4px solid $primary;
+    color: $primary;
+  }
+}
