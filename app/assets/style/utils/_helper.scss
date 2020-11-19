@@ -1,0 +1,14 @@
+.caption {
+  color: $caption;
+}
+.btn-border {
+  border: 1px solid $border-color;
+}
+.btn-icon {
+  display: flex;
+  .fas, .material-icons {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+}

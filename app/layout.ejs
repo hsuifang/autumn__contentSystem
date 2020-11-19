@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%- title %></title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 
 </head>
@@ -17,19 +16,19 @@
       <nav>
         <h1 class="logo text-hide">Answer</h1>
         <ul class="nav flex-column">
-          <li class="nav-item">
-            <a href="#" class="nav-link active"><span class="nav-icon material-icons">assessment</span>Dashboard</a>
+          <li class="nav-item <% if (page_name === 'dashboard') {%>active<%} %>">
+            <a href="#" class="nav-link"><span class="nav-icon material-icons">assessment</span>Dashboard</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item <% if (page_name === 'question') {%>active<%} %>">
             <a href="#" class="nav-link"><span class="nav-icon material-icons">question_answer</span>Question</a>
           </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link"><span class="nav-icon material-icons">assignment</span>Assignment</a>
+          <li class="nav-item <% if (page_name === 'assignment') {%>active<%} %>">
+            <a href="assignment.html" class="nav-link"><span class="nav-icon material-icons">assignment</span>Assignment</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"><span class="nav-icon material-icons">supervisor_account</span></i>Admin</a>
+          <li class="nav-item  <% if (page_name === 'admin') {%>active<%} %>">
+            <a href="admin.html" class="nav-link"><span class="nav-icon material-icons">supervisor_account</span></i>Admin</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item  <% if (page_name === 'settings') {%>active<%} %>">
             <a href="#" class="nav-link"><span class="nav-icon material-icons">settings</span></i>Settings</a>
           </li>
         </ul>

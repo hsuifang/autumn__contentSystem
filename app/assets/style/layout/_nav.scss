@@ -31,6 +31,12 @@
   &:active {
     background-color: rgba($primary, 0.3);
   }
+  &.active {
+    .nav-link{
+      border-left: 4px solid $primary;
+      color: $primary;
+    }
+  }
   .nav-icon {
     margin-right: 20px;
   }
@@ -40,9 +46,5 @@
     font-size: $fsz;
     line-height: 1.5;
     border-left: 4px solid transparent;
-  }
-  .nav-link.active {
-    border-left: 4px solid $primary;
-    color: $primary;
   }
 }

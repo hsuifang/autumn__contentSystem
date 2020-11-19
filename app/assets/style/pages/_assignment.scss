@@ -1,21 +1,8 @@
-.table  {
-  thead th {
-    border-bottom: 2px solid #000;
-  }
-  tbody tr:last-of-type td, tbody tr:last-of-type th  {
-    border-bottom: 1px solid $border-color;
-  }
+.p-assignTitle {
+  font-size: $fsz;
+  font-weight: bold;
 }
-
-.profile {
-  display: flex;
-  flex: 1 1 auto;
-  &__img {
-    width: 40%;
-    object-fit: cover;
-    margin-right: 20px;
-  }
-  &__content {
-    flex-grow: 1;
-  }
+.p-assignCaption {
+  line-height: 2;
+  font-size: $fsz * 0.75;
 }

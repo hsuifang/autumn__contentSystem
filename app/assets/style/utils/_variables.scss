@@ -1,6 +1,10 @@
 $primary: #2A8356; 
 $secondary: #EDF4EE;
+$light: #707070;
+$dark: #121212;
+$caption: #0000009A;
 
+$border-radius: 0.125rem;
 
 // Links
 //
@@ -19,7 +23,6 @@ $border-color:                #CDDDCD !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 $table-cell-padding:          1.25rem !default;
-$table-cell-padding-sm:       .5rem !default;
 
 // Grid columns
 //
@@ -44,10 +47,21 @@ $spacers: map-merge(
   $spacers
 );
 
+// List group
+//
+$list-group-item-padding-y:         0.75rem;
+$list-group-item-padding-x:         0.75rem;
+
+// input
+//
+$input-btn-padding-y:         .5rem;
+
+// btn
+$btn-padding-x: 2rem;
+
 
 // Modals
-
-// Padding applied to the modal body
+//
 $modal-inner-padding:               2rem;
 
 // font-size
