@@ -1,0 +1,8 @@
+.list-group-item {
+  &:hover{
+    background-color: rgba($primary, 0.2);
+    a {
+      text-decoration: none
+    }
+  }
+}

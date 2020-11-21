@@ -1,4 +1,5 @@
 .sidebar {
+  width: 300px;
   background: #EDF4EE;
   position: fixed;
   top: 0;
@@ -7,11 +8,19 @@
   z-index: 100;
   padding: 0;
 }
+
+.content {
+  padding-left: 300px;
+}
+
 .logo {
   height: 104px;
   background-repeat: no-repeat;
   background-position: 30px center;
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg');
+  a {
+    display: block;
+  }
 }
 .avatar {
   padding: 32px;

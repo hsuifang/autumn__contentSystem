@@ -11,45 +11,44 @@
 <body>
   
 <div class="container-fluid">
-  <div class="row">
-    <section class="sidebar col-2 d-flex flex-column justify-content-between">
-      <nav>
-        <h1 class="logo text-hide">Answer</h1>
-        <ul class="nav flex-column">
-          <li class="nav-item ">
-            <a href="#" class="nav-link"><span class="nav-icon material-icons">assessment</span>Dashboard</a>
-          </li>
-          <li class="nav-item ">
-            <a href="#" class="nav-link"><span class="nav-icon material-icons">question_answer</span>Question</a>
-          </li>
-          <li class="nav-item active">
-            <a href="assignment.html" class="nav-link"><span class="nav-icon material-icons">assignment</span>Assignment</a>
-          </li>
-          <li class="nav-item  ">
-            <a href="admin.html" class="nav-link"><span class="nav-icon material-icons">supervisor_account</span></i>Admin</a>
-          </li>
-          <li class="nav-item  ">
-            <a href="#" class="nav-link"><span class="nav-icon material-icons">settings</span></i>Settings</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="avatar d-flex align-items-center">
-        <img class="avatar__img rounded-circle" src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="Avatar">
-        <div class="avatar__content">
-          <h6>Andy Chen</h6>
-          <p class="text-muted">andy0401@mail.com</p>
-        </div>
+  <section class="sidebar d-flex flex-column justify-content-between">
+    <nav>
+      <h1 class="logo"><a class="text-hide" href="#">Answer</a></h1>
+      <ul class="nav flex-column">
+        <li class="nav-item ">
+          <a href="#" class="nav-link"><span class="nav-icon material-icons">assessment</span>Dashboard</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#" class="nav-link"><span class="nav-icon material-icons">question_answer</span>Question</a>
+        </li>
+        <li class="nav-item active">
+          <a href="assignment.html" class="nav-link"><span class="nav-icon material-icons">assignment</span>Assignment</a>
+        </li>
+        <li class="nav-item  ">
+          <a href="admin.html" class="nav-link"><span class="nav-icon material-icons">supervisor_account</span></i>Admin</a>
+        </li>
+        <li class="nav-item  ">
+          <a href="#" class="nav-link"><span class="nav-icon material-icons">settings</span></i>Settings</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="avatar d-flex align-items-center">
+      <img class="avatar__img rounded-circle" src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="Avatar">
+      <div class="avatar__content">
+        <h6>Andy Chen</h6>
+        <p class="text-muted">andy0401@mail.com</p>
       </div>
-    </section>
-    <main class="col-10 ml-auto">
-      
+    </div>
+  </section>
+  <main class="content">
+    
 <header class="header d-flex justify-content-between align-items-center">
   <div class="d-flex align-items-center">
     <h2 class="header__title">Assignment</h2>
-    <p class="d-flex">
+    <div class="c-dropdown">
       <span class="material-icons text-primary mr-2">keyboard_arrow_down</span>
-      All Courses
-    </p>
+      <p>All Courses</p>
+    </div>
   </div>
   <div class="header__action">
     <span class="material-icons mr-4">search</span>
@@ -58,51 +57,62 @@
 </header>
 <section>
   <div class="d-flex justify-content-between">
-    <p class="d-flex mb-2">All(4)<span class="material-icons text-primary mr-2">keyboard_arrow_down</span></p>
+    <div class="c-dropdown mb-2">
+      <p>All(4)</p>
+      <span class="material-icons text-primary mr-2">keyboard_arrow_down</span>
+    </div>
     <p class="p-assignCaption text-light">2 comments</p>
   </div>
   <div class="row">
     <div class="col-4 pr-0">
       <ul class="list-group">
         <li class="list-group-item bg-secondary">
-          <div class="d-flex justify-content-between">
-            <p class="p-assignCaption">Chapter Assignment 2</p>
-            <p class="p-assignCaption">4 hrs ago</p>
-          </div>
-          <div class="d-flex justify-content-between">
-            <h4 class="p-assignTitle">Please check this file…</h4>
-            <p class="p-assignCaption caption">Emily Wang</p>
-          </div>
+          <a href="#">
+            <div class="d-flex justify-content-between">
+              <p class="p-assignCaption">Chapter Assignment 2</p>
+              <p class="p-assignCaption">4 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h4 class="p-assignTitle">Please check this file…</h4>
+              <p class="p-assignCaption caption">Emily Wang</p>
+            </div>
+          </a>
         </li>
         <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <p class="p-assignCaption">Chapter Assignment 1</p>
-            <p class="p-assignCaption">12 hrs ago</p>
-          </div>
-          <div class="d-flex justify-content-between">
-            <h4 class="p-assignTitle">My Homework</h4>
-            <p class="p-assignCaption caption">David Xu</p>
-          </div>
+          <a href="#">
+            <div class="d-flex justify-content-between">
+              <p class="p-assignCaption">Chapter Assignment 1</p>
+              <p class="p-assignCaption">12 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h4 class="p-assignTitle">My Homework</h4>
+              <p class="p-assignCaption caption">David Xu</p>
+            </div>
+          </a>
         </li>
         <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <p class="p-assignCaption">Chapter Assignment 1</p>
-            <p class="p-assignCaption">18 hrs ago</p>
-          </div>
-          <div class="d-flex justify-content-between">
-            <h4 class="p-assignTitle">Have a problem with this…</h4>
-            <p class="p-assignCaption caption">Tony Wei</p>
-          </div>
+          <a href="#">
+            <div class="d-flex justify-content-between">
+              <p class="p-assignCaption">Chapter Assignment 1</p>
+              <p class="p-assignCaption">18 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h4 class="p-assignTitle">Have a problem with this…</h4>
+              <p class="p-assignCaption caption">Tony Wei</p>
+            </div>
+          </a>
         </li>
         <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <p class="p-assignCaption">Final Assignment</p>
-            <p class="p-assignCaption">19 hrs ago</p>
-          </div>
-          <div class="d-flex justify-content-between">
-            <h4 class="p-assignTitle">Did I do it right?</h4>
-            <p class="p-assignCaption caption">Christina Lin</p>
-          </div>
+          <a href="#">
+            <div class="d-flex justify-content-between">
+              <p class="p-assignCaption">Final Assignment</p>
+              <p class="p-assignCaption">19 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h4 class="p-assignTitle">Did I do it right?</h4>
+              <p class="p-assignCaption caption">Christina Lin</p>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -148,18 +158,19 @@
                 You can:
                 <br/>
                 <br/>
-                • adjust the <span class="bg-secondary text-primary">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="bg-secondary text-primary">middle</span> ) or 　
-                <br/>  
-                • change the <span class="bg-secondary text-primary">display</span> so it isn’t inline.
+                <ul>
+                  <li class="mb-3">adjust the <span class="bg-secondary text-primary">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="bg-secondary text-primary">middle</span> ) or 　</li>
+                  <li>change the <span class="bg-secondary text-primary">display</span> so it isn’t inline.</li>
+                </ul>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center justify-content-between mb-3">
         <div>
-          <span class="material-icons mr-4">keyboard_arrow_left</span>
-          <span class="material-icons">keyboard_arrow_right</span>
+          <a href="#"><span class="material-icons mr-4">keyboard_arrow_left</span></a>
+          <a href="#"><span class="material-icons">keyboard_arrow_right</span></a>
         </div>
         <div>
           <button type="button" class="btn btn-outline-primary mr-3">Mark as read</button>
@@ -171,8 +182,7 @@
 </section>
 
 
-    </main>
-  </div>
+  </main>
 </div>
 
 
